@@ -4,8 +4,8 @@
   "description": "A small website that displays my portfolio (bio, contact, projects etc.)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "watch-css": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "npx tailwindcss -i ./src/index.css -o ./public/index.css --watch"
   },
   "author": "King-Diorr Willsun",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "flowbite": "^1.5.2"
   }
 }

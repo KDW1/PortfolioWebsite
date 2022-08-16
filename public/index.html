@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KingCoder</title>
+    <title>KingCode</title>
     <link rel="stylesheet" href="./index.css">
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="bg-backdrop ">
     <style>
@@ -17,52 +18,214 @@
             background-image: linear-gradient(#3D7459, #3D7459);
             transition: background-size 0.3s ease-in-out;
         }
-
         .under:hover {
             background-size: 100% 10%;
             background-position: 50% bottom;
         }
 
         .unused {
-            color: #7fe7a4;
+            color: #2a3a32;
+        }
+
+        .drop{
+            box-shadow: -3rem 2rem #242e29;
         }
     </style>
     <!--Navbar-->
-    <div class="mx-auto mt-4 w-11/12 flex justify-between">
+    <div id="about"></div>
+    <div class="mx-auto mt-6 w-11/12 flex justify-between">
         <div class="flex pl-2">
             <p class="text-3xl font-bold text-white hover:scale-110 transition-transform duration-300">
-                KDW
+                KingCode
             </p>
         </div>
-        <div class="flex">
-            <p class="text-xl font-semibold text-white under">About</p>
-            <p class="text-xl font-semibold text-white under ml-4">Projects</p>
-            <p class="text-xl font-semibold text-white under ml-4">Contact</p>
+        <div class="flex ml-auto">
+            <a href = "#about" class="decoration-n text-xl font-semibold text-white under">About</p>
+            <a href = "#projects" class="text-xl font-semibold text-white under ml-4">Projects</p>
+            <a href = "#contact" class="text-xl font-semibold text-white under ml-4">Contact</p>
         </div>
     </div>
-    <div class="mx-auto mt-8 flex-col w-2/3">
+    <div class="mx-auto mt-8 flex-col w-2/3 pb-18">
         <p class="text-start font-semibold text-4xl text-secondary">
             Hey, my name is
         </p>
         <div class="relative group">
-            <p class="absolute -inset-0.5 text-start font-bold text-7xl text-green-400 blur-lg opacity-25 group-hover:blur-xl group-hover:opacity-75 transition-all duration-300">
+            <p class="absolute -inset-0.5 text-start font-bold text-7xl text-green-400 blur-lg opacity-25 group-hover:opacity-60 transition-all duration-300">
                 King-Diorr
             </p>
             <p class="relative text-start font-bold text-7xl text-display">
                 King-Diorr
             </p>
-        <p class="mt-4 text-start font-semibold text-xl text-secondary w-2/3">
-            I'm an aspiring web developer, with experience in frontend & backend development. Here are some of the tools I've worked with
+        </div>
+        <p class="mt-4 text-start font-semibold text-xl text-secondary w-2/3 break-words">
+            I'm an aspiring web developer, with experience in Frontend & Backend development.
+            Below, are some tools I've worked with
         </p>
-        <p class="mt-2 text-start font-semibold text-base text-white w-1/3">
+        <p class="mt-2 text-start font-semibold text-base text-white w-1/3 hover:translate-x-4 transition-all delay-75 duration-500 ease-in-out">
             HTML, CSS, JS, C#, ExpressJS, 
             React, Bootstrap, Tailwind...
         </p>
-        <div class="relative">
-            <!-- <img class="absolute rounded-lg h-60 w-auto ml-auto fill-secondary" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""> -->
-            <img class="relative rounded-lg h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-left" data-aos-duration="2000" class="drop rounded-lg h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+    </div>
+    <div data-aos="fade-right" data-aos-duration="1250" class="mx-auto mt-48 flex-col w-2/3 pb-20 pt-16">
+        <div class="flex">
+            <img src="./quoteBegin.png" alt="" class="stroke-secondary h-5 mr-4 w-auto self-start">
+            <div class="flex-col">
+                <p class="text-white font-semibold text-6xl">
+                    In the middle of every problem, lies opportunity
+                    <img src="./quoteEnd.png" alt="" class="inline-flex h-5 w-auto self-end mr-auto">
+                </p>
+                <p class="mt-4 text-display text-4xl font-bold">
+                    //Albert Einstein
+                </p>
+                <div class="mt-8">
+                    <p class="text-secondary font-semibold text-2xl">
+                        This quote summarizes the purpose of my applications and projects. <br>
+                        That in the presence of a need, I can use technology to craft a solution for it.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="projects">
+
+    </div>
+    <!-- data-aos="fade-up" data-aos-duration="2000"-->
+    <div data-aos="fade-up" data-aos-duration="2000" class="mx-auto mt-36 flex-col w-5/6 pb-28">
+        <p class="text-secondary text-3xl mx-auto font-semibold w-max">
+            Here are some of my
+        </p>
+        <p class="text-white mx-auto text-6xl mt-2 font-bold w-max border-t-4 border-spacing-4 px-6 border-darkGrey">
+            My Projects
+        </p>
+        <div class="mt-14 flex flex-wrap justify-center">
+            <div class="flex-col w-5/12">
+                <div onclick="location.href = `https://kdw1.github.io/WaiterDuty/`" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <span class="px-3 py-2 ml-2 mr-4">
+                        <p class="text-start text-white text-3xl font-semibold">
+                            Waiter Duty
+                        </p>
+                        <p class="text-start text-secondary font-semibold text-base">
+                            A small application that makes creating employee (waiter duty) rosters, easier for students.
+                        </p>
+                        
+                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>               
+                    </span>
+                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./soupkitchen.jpg" alt="">
+                </div>
+                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
+                    HTML, CSS, JS, Bulma
+                </p>
+            </div>
+            <div class="flex-col w-5/12 ml-8">
+                <div onclick="location.href = `https://kdw1.github.io/MHI-Cerebro-Project/Cerebro/`" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <span class="px-3 py-2 ml-2 mr-4">
+                        <p class="text-start text-white text-3xl font-semibold">
+                            MHI Prototype
+                        </p>
+                        <p class="text-start text-secondary font-semibold text-base">
+                            MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro webstie
+                        </p>
+                        
+                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                        </svg>               
+                    </span>
+                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./mentalHealth.jpg" alt="">
+                </div>
+                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
+                    HTML, CSS, JS, Bootstrap
+                </p>
+            </div>
+            <div class="flex-col w-5/12 mt-8">
+                <div onclick="location.href = 'https://play.google.com/store/apps/details?id=com.kingcode.weather_app'" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <span class="px-3 py-2 ml-2 mr-4">
+                        <p class="text-start text-white text-3xl font-semibold">
+                            Weather App
+                        </p>
+                        <p class="text-start text-secondary font-semibold text-base">
+                            My first weather app where I tried working with a public api, and with some weather data!
+                        </p>
+                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                        </svg>             
+                    </span>
+                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./soupkitchen.jpg" alt="">
+                </div>
+                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
+                    Flutter, Dart, APIs, Android Studio (Tool)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="mx-auto mt-64 w-2/3 pb-32">
+        <p class="text-white mx-auto text-6xl mt-2 font-bold w-max border-b-4 pb-4 px-6 border-darkGrey">
+            Contact Me Here
+        </p>
+        <p class="text-white text-center mx-auto text-2xl mt-2 font-bold w-max pb-4 px-6">
+            At my email: <br><span onclick="location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=diorrw@gmail.com'" class="cursor-pointer text-display under">diorrw@gmail.com</span>
+        </p>
+        <p class="text-secondary text-center mx-auto text-4xl font-bold w-max px-6">
+            or
+        </p>
+        <div class="mx-auto w-max flex space-x-4">
+            <svg onclick="location.href = 'https://github.com/kdw1'" class="cursor-pointer mt-4 fill-white h-28 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>  
+            <svg onclick="location.href = 'https://kdw.itch.io'" class="cursor-pointer mt-4 fill-white h-28 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M71.92 34.77C50.2 47.67 7.4 96.84 7 109.73v21.34c0 27.06 25.29 50.84 48.25 50.84 27.57 0 50.54-22.85 50.54-50 0 27.12 22.18 50 49.76 50s49-22.85 49-50c0 27.12 23.59 50 51.16 50h.5c27.57 0 51.16-22.85 51.16-50 0 27.12 21.47 50 49 50s49.76-22.85 49.76-50c0 27.12 23 50 50.54 50 23 0 48.25-23.78 48.25-50.84v-21.34c-.4-12.9-43.2-62.07-64.92-75C372.56 32.4 325.76 32 256 32S91.14 33.1 71.92 34.77zm132.32 134.39c-22 38.4-77.9 38.71-99.85.25-13.17 23.14-43.17 32.07-56 27.66-3.87 40.15-13.67 237.13 17.73 269.15 80 18.67 302.08 18.12 379.76 0 31.65-32.27 21.32-232 17.75-269.15-12.92 4.44-42.88-4.6-56-27.66-22 38.52-77.85 38.1-99.85-.24-7.1 12.49-23.05 28.94-51.76 28.94a57.54 57.54 0 0 1-51.75-28.94zm-41.58 53.77c16.47 0 31.09 0 49.22 19.78a436.91 436.91 0 0 1 88.18 0C318.22 223 332.85 223 349.31 223c52.33 0 65.22 77.53 83.87 144.45 17.26 62.15-5.52 63.67-33.95 63.73-42.15-1.57-65.49-32.18-65.49-62.79-39.25 6.43-101.93 8.79-155.55 0 0 30.61-23.34 61.22-65.49 62.79-28.42-.06-51.2-1.58-33.94-63.73 18.67-67 31.56-144.45 83.88-144.45zM256 270.79s-44.38 40.77-52.35 55.21l29-1.17v25.32c0 1.55 21.34.16 23.33.16 11.65.54 23.31 1 23.31-.16v-25.28l29 1.17c-8-14.48-52.35-55.24-52.35-55.24z"/>
+            </svg>
+            <svg onclick="revealDiscord()" class="cursor-pointer mt-4 fill-white h-28 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/>
+            </svg>    
+        </div>
+        <p id="discordName" class=" flex items-center mx-auto text-white text-2xl font-bold smx-auto mt-2 w-max pb-4 px-6">
+            
+        </p>
+    </div>
     <!--Content-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    let discordName = "TheOneOba#3319"
+    let revealed = false
+    const revealDiscord = () =>  {
+        if(!revealed) {
+            document.getElementById("discordName").innerHTML =  `${discordName}
+            <svg onclick="copyDiscord()" class="inline ml-2 cursor-pointer fill-secondary hover:fill-display hover:scale-105 h-8 transition duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM272 224h-160C103.2 224 96 216.8 96 208C96 199.2 103.2 192 112 192h160C280.8 192 288 199.2 288 208S280.8 224 272 224z"/>
+            </svg>`
+            revealed = true
+        }
+    }
+
+    const copyDiscord = () => {
+        navigator.clipboard.writeText(discordName)
+        alert("Done!")
+    }
+    // document.addEventListener("scroll", (e) => {
+    //     let projTitle = document.getElementById("projIntro").getBoundingClientRect();
+    //     projTitleY = projTitle.y;
+    // if(1.5 * projTitleY <= window.innerHeight) {
+    //     console.log("Reach Intro")
+    // }
+    // })
+  </script>
 </body>
 </html>
