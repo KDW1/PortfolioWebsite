@@ -32,16 +32,24 @@
         }
     </style>
     <!--Navbar-->
-    <div class="mx-auto mt-6 w-11/12 flex justify-between">
-        <div class="flex pl-2">
+    <div id="nav" class="mx-auto mt-6 w-11/12 xs:flex-col flex justify-between items-center">
+        <div class="xs:w-full flex pl-2 justify-between">
             <a href="" class="cursor-pointer text-3xl font-bold text-white hover:scale-110 transition-transform duration-300">
                 KingCode
             </a>
+            <svg onclick="toggleReveal()" xmlns="http://www.w3.org/2000/svg" class="h-6 w-auto hidden xs:flex stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
         </div>
-        <div class="flex ml-auto">
+        <div class="flex ml-auto xs:hidden">
             <a href = "#about" class="text-xl font-semibold text-white under">About</a>
             <a href = "#projects" class="text-xl font-semibold text-white under ml-4">Projects</a>
             <a href = "#contact" class="text-xl font-semibold text-white under ml-4">Contact</a>
+        </div>
+        <div id="menu" class="hidden ml-auto pb-4 border-b-4 border-secondary">
+            <a href = "#about" class="text-end block text-xl font-semibold text-white">About</a>
+            <a href = "#projects" class="text-end block text-xl font-semibold text-white">Projects</a>
+            <a href = "#contact" class="text-end block text-xl font-semibold text-white">Contact</a>
         </div>
     </div>
     <div id="about"></div>
@@ -70,95 +78,100 @@
         <img data-aos="fade-left" data-aos-duration="2000" class="sm:hidden md:mt-4 md:mx-auto drop rounded-lg xs:h-28 sm:h-44 h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
         <img data-aos="fade-left" data-aos-duration="2000" class="hidden sm:flex md:mt-4 md:mx-auto rounded-lg xs:h-28 sm:h-44 h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
     </div>
-    <div data-aos="fade-right" data-aos-duration="1250" class="mx-auto mt-48 flex-col lg:w-5/6 w-2/3 pb-20 pt-16">
-        <div class="flex">
-            <img src="./quoteBegin.png" alt="" class="stroke-secondary sm:h-3 md:h-4 h-5 mr-4 w-auto self-start">
+    <div data-aos="fade-right" data-aos-duration="1250" class="mx-auto sm:mt-24 mt-48 flex lg:w-5/6 w-2/3 pt-16">
+            <p class="hidden bruh:inline text-white mr-2">"</p>
+            <img src="./quoteBegin.png" alt="" class="stroke-secondary bruh:hidden xs:h-2 sm:h-3 md:h-4 h-5 xs:mr-2 mr-4 w-auto self-start">
             <div class="flex-col">
-                <p class="text-white font-semibold sm:text-4xl md:text-5xl text-6xl">
-                    In the middle of every problem, lies opportunity<img src="./quoteEnd.png" alt="" class="inline-flex sm:h-3 md:h-4 h-5 w-auto self-baseline ml-2">
+                <p class="text-white font-semibold bruh:text-lg xs:text-2xl sm:text-3xl md:text-5xl text-6xl">
+                    In the middle of every problem, lies opportunity<span class="hidden bruh:inline">"</span><img src="./quoteEnd.png" alt="" class="bruh:hidden inline-flex xs:h-2 sm:h-3 md:h-4 h-5 w-auto self-end ml-2">
                 </p>
-                <p class="mt-4 text-display sm:text-2xl md:text-3xl text-4xl font-bold">
+                <p class="xs:mt-2 mt-4 text-display bruh:text-base xs:text-xl sm:text-2xl md:text-3xl text-4xl font-bold">
                     //Albert Einstein
                 </p>
-                <div class="sm:mt-4 md:mt-6 mt-8">
-                    <p class="text-secondary font-semibold sm:text-base md:text-lg text-2xl">
-                        This quote summarizes the purpose of my applications and projects. <br>
+                <div class="bruh:mt-1 sm:mt-4 md:mt-6 mt-8">
+                    <p class="bruh:hidden text-secondary font-semibold  sm:text-base md:text-lg text-2xl">
+                        This quote summarizes the purpose of my applications and projects.
                         That in the presence of a need, I can use technology to craft a solution for it.
+                    </p>
+                    <p class="text-secondary font-semibold bruh:text-sm sm:text-base md:text-lg text-2xl">
+                        I quote this, because in the presence of a need, I use technology to craft a solution.
                     </p>
                 </div>
             </div>
-        </div>
     </div>
     <div id="projects"></div>
     <!-- data-aos="fade-up" data-aos-duration="2000"-->
     <div data-aos="fade-up" data-aos-duration="2000" class="mx-auto mt-36 flex-col w-5/6 pb-28">
-        <p class="text-secondary text-3xl mx-auto font-semibold w-max">
+        <p class="text-secondary bruh:text-lg sm:text-xl md:text-2xl text-3xl mx-auto font-semibold w-max">
             Here are some of my
         </p>
-        <p class="text-white mx-auto text-6xl mt-2 font-bold w-max border-t-4 border-spacing-4 px-6 border-darkGrey">
+        <p class="text-white mx-auto  xs:text-2xl sm:text-3xl md:text-5xl text-6xl mt-2 font-bold w-max border-t-4 border-spacing-4 px-6 border-darkGrey">
             My Projects
         </p>
-        <div class="mt-14 flex flex-wrap justify-center">
-            <div class="flex-col w-5/12">
-                <div onclick="location.href = `https://kdw1.github.io/WaiterDuty/`" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+        <div class="mt-14 md:flex-col flex flex-wrap justify-center">
+            <div class="md:mx-auto md:w-2/3 flex-col w-5/12">
+                <div onclick="location.href = `https://kdw1.github.io/WaiterDuty/`" class="sm:flex-col md:h-1/2 cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <img class="hidden sm:flex object-top xs:h-1/4 sm:h-44 w-full object-cover ml-auto rounded-t-lg" src="./soupkitchen.jpg" alt="">
                     <span class="px-3 py-2 ml-2 mr-4">
-                        <p class="text-start text-white text-3xl font-semibold">
+                        <p class="text-start sm:text-center sm:mt-2 text-white xs:text-2xl sm:text-3xl md:text-2xl text-3xl font-semibold">
                             Waiter Duty
                         </p>
-                        <p class="text-start text-secondary font-semibold text-base">
+                        <p class="sm:hidden text-start text-secondary font-semibold bruh:text-xs sm:text-sm text-base">
                             A small application that makes creating employee (waiter duty) rosters, easier for students.
                         </p>
                         
-                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <svg class="sm:mx-auto mt-4 fill-white h-12 sm:mb-4 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                         </svg>               
                     </span>
-                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./soupkitchen.jpg" alt="">
+                    <img class="sm:hidden object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./soupkitchen.jpg" alt="">
                 </div>
-                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
+                <p class="break-words w-full transition duration-300 ease-in-out hover:translate-x-2 mt-2 bruh:text-base text-lg text-display text-start font-semibold border-b-4 pb-2 border-secondary">
                     HTML, CSS, JS, Bulma
                 </p>
             </div>
-            <div class="flex-col w-5/12 ml-8">
-                <div onclick="location.href = `https://kdw1.github.io/MHI-Cerebro-Project/Cerebro/`" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+            <div class="md:mx-auto md:w-2/3 md:mt-12 flex-col w-5/12 ml-8">
+                <div onclick="location.href = `https://kdw1.github.io/MHI-Cerebro-Project/Cerebro/`" class="sm:flex-col md:h-1/2 cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <img class="hidden sm:flex object-left xs:h-1/4 sm:h-44 w-full object-cover ml-auto rounded-t-lg" src="./mentalHealth.jpg" alt="">
                     <span class="px-3 py-2 ml-2 mr-4">
-                        <p class="text-start text-white text-3xl font-semibold">
+                        <p class="text-start sm:text-center sm:mt-2 text-white xs:text-2xl sm:text-3xl md:text-2xl text-3xl font-semibold">
                             MHI Prototype
                         </p>
-                        <p class="text-start text-secondary font-semibold text-base">
+                        <p class="sm:hidden text-start text-secondary font-semibold bruh:text-xs sm:text-sm text-base">
                             MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro webstie
                         </p>
                         
-                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <svg class="sm:mx-auto mt-4 fill-white h-12 sm:mb-4 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
                             <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
                         </svg>               
                     </span>
-                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./mentalHealth.jpg" alt="">
+                    <img class="sm:hidden object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./mentalHealth.jpg" alt="">
                 </div>
-                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
+                <p class="break-words w-full transition duration-300 ease-in-out hover:translate-x-2 mt-2 bruh:text-base text-lg text-display text-start font-semibold border-b-4 pb-2 border-secondary">
                     HTML, CSS, JS, Bootstrap
                 </p>
             </div>
-            <div class="flex-col w-5/12 mt-8">
-                <div onclick="location.href = 'https://play.google.com/store/apps/details?id=com.kingcode.weather_app'" class="cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+            <div class="md:mx-auto md:w-2/3 md:mt-12 flex-col w-5/12 ml-8">
+                <div onclick="location.href = 'https://play.google.com/store/apps/details?id=com.kingcode.weather_app'" class="sm:flex-col md:h-1/2 cursor-pointer transition duration-300 ease-in-out shadow-none hover:shadow-black/20 hover:shadow-lg hover:scale-105 relative flex bg-darkTone rounded-lg">
+                    <img class="hidden sm:flex object-top xs:h-1/12 sm:h-44 w-full object-cover ml-auto rounded-t-lg" src="./weather.jpg" alt="">
                     <span class="px-3 py-2 ml-2 mr-4">
-                        <p class="text-start text-white text-3xl font-semibold">
+                        <p class="text-start sm:text-center sm:mt-2 text-white xs:text-2xl sm:text-3xl md:text-2xl text-3xl font-semibold">
                             Weather App
                         </p>
-                        <p class="text-start text-secondary font-semibold text-base">
+                        <p class="sm:hidden text-start text-secondary font-semibold bruh:text-xs sm:text-sm text-base">
                             My first weather app where I tried working with a public api, and with some weather data!
                         </p>
-                        <svg class="mt-4 fill-white h-12 mb-8 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg class="sm:mx-auto mt-4 fill-white h-12 sm:mb-4 mb-8 " ="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                             <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
-                        </svg>             
+                        </svg>              
                     </span>
-                    <img class="object-right w-5/12 object-cover ml-auto rounded-r-lg" src="./weather.jpg" alt="">
+                    <img class="sm:hidden object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./weather.jpg" alt="">
                 </div>
-                <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
-                    Flutter, Dart, APIs, Android Studio (Tool)
+                <p class="break-words w-full transition duration-300 ease-in-out hover:translate-x-2 mt-2 bruh:text-base text-lg text-display text-start font-semibold border-b-4 pb-2 border-secondary">
+                    Flutter, Dart, APIs, Android Studio
                 </p>
             </div>
         </div>
@@ -206,6 +219,17 @@
             });
         });
     });
+
+    const toggleReveal = () => {
+        let menu = document.getElementById("menu");
+        if(menu.classList.contains("hidden")) {
+            menu.classList.add("flex-col")
+            menu.classList.remove("hidden")
+        } else if(menu.classList.contains("flex-col")) {
+            menu.classList.remove("flex-col")
+            menu.classList.add("hidden")
+        }
+    }
     const revealDiscord = () =>  {
         if(!revealed) {
             document.getElementById("discordName").innerHTML =  `${discordName}

@@ -8,9 +8,9 @@ module.exports = {
       xl: {'max':'1280px'},
       lg: {'max':'1130px'},
       md: {'max':'950px'},
-      sm: {'max':'735px'},
+      sm: {'max':'765px'},
       'xs': {'max': '550px'},
-      'bruh': {'max': '390px'}
+      'bruh': {'max': '395px'}
     },
     colors: {
       "display": "#49E17D",
