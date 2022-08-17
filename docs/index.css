@@ -1298,10 +1298,32 @@ input:checked + .toggle-bg {
   width: 1rem;
 }
 
+.w-min {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
 .min-w-max {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.min-w-min {
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.max-w-min {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -2229,6 +2251,11 @@ input:checked + .toggle-bg {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
 
 @media (max-width: 550px) {
@@ -2260,12 +2287,32 @@ input:checked + .toggle-bg {
     height: 25%;
   }
 
+  .xs\:h-16 {
+    height: 4rem;
+  }
+
+  .xs\:h-12 {
+    height: 3rem;
+  }
+
+  .xs\:h-1\/3 {
+    height: 33.333333%;
+  }
+
+  .xs\:h-1\/6 {
+    height: 16.666667%;
+  }
+
   .xs\:w-full {
     width: 100%;
   }
 
   .xs\:flex-col {
     flex-direction: column;
+  }
+
+  .xs\:pb-1 {
+    padding-bottom: 0.25rem;
   }
 
   .xs\:text-2xl {
@@ -2287,6 +2334,21 @@ input:checked + .toggle-bg {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .xs\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .xs\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .xs\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (max-width: 395px) {
@@ -2300,6 +2362,30 @@ input:checked + .toggle-bg {
 
   .bruh\:hidden {
     display: none;
+  }
+
+  .bruh\:h-1\/6 {
+    height: 16.666667%;
+  }
+
+  .bruh\:h-56 {
+    height: 14rem;
+  }
+
+  .bruh\:h-96 {
+    height: 24rem;
+  }
+
+  .bruh\:h-1\/2 {
+    height: 50%;
+  }
+
+  .bruh\:h-2\/3 {
+    height: 66.666667%;
+  }
+
+  .bruh\:h-1\/3 {
+    height: 33.333333%;
   }
 
   .bruh\:text-xl {
@@ -2330,5 +2416,15 @@ input:checked + .toggle-bg {
   .bruh\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .bruh\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .bruh\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
