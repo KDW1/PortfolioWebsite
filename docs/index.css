@@ -2360,6 +2360,10 @@ input:checked + .toggle-bg {
     display: inline;
   }
 
+  .bruh\:flex {
+    display: flex;
+  }
+
   .bruh\:hidden {
     display: none;
   }
