@@ -32,54 +32,56 @@
         }
     </style>
     <!--Navbar-->
-    <div id="about"></div>
     <div class="mx-auto mt-6 w-11/12 flex justify-between">
         <div class="flex pl-2">
-            <p class="text-3xl font-bold text-white hover:scale-110 transition-transform duration-300">
+            <a href="" class="cursor-pointer text-3xl font-bold text-white hover:scale-110 transition-transform duration-300">
                 KingCode
-            </p>
+            </a>
         </div>
         <div class="flex ml-auto">
-            <a href = "#about" class="decoration-n text-xl font-semibold text-white under">About</p>
-            <a href = "#projects" class="text-xl font-semibold text-white under ml-4">Projects</p>
-            <a href = "#contact" class="text-xl font-semibold text-white under ml-4">Contact</p>
+            <a href = "#about" class="text-xl font-semibold text-white under">About</a>
+            <a href = "#projects" class="text-xl font-semibold text-white under ml-4">Projects</a>
+            <a href = "#contact" class="text-xl font-semibold text-white under ml-4">Contact</a>
         </div>
     </div>
+    <div id="about"></div>
     <div class="mx-auto mt-8 flex-col w-2/3 pb-18">
-        <p class="text-start font-semibold text-4xl text-secondary">
+        <p class="md:text-center text-start font-semibold bruh:text-xl xs:text-2xl sm:text-3xl text-4xl text-secondary">
             Hey, my name is
         </p>
         <div class="relative group">
-            <p class="absolute -inset-0.5 text-start font-bold text-7xl text-green-400 blur-lg opacity-25 group-hover:opacity-60 transition-all duration-300">
+            <p class="md:text-center absolute -inset-0.5 text-start font-bold bruh:text-4xl xs:text-5xl sm:text-6xl text-7xl text-green-400 blur-lg opacity-25 group-hover:opacity-60 transition-all duration-300">
                 King-Diorr
             </p>
-            <p class="relative text-start font-bold text-7xl text-display">
+            <p class="md:text-center relative text-start font-bold bruh:text-4xl xs:text-5xl sm:text-6xl text-7xl text-display">
                 King-Diorr
             </p>
         </div>
-        <p class="mt-4 text-start font-semibold text-xl text-secondary w-2/3 break-words">
+        <p class="md:mx-auto md:text-center text-start mt-4 font-semibold xs:hidden sm:text-base text-xl text-secondary sm:w-full w-2/3 break-words">
             I'm an aspiring web developer, with experience in Frontend & Backend development.
             Below, are some tools I've worked with
         </p>
-        <p class="mt-2 text-start font-semibold text-base text-white w-1/3 hover:translate-x-4 transition-all delay-75 duration-500 ease-in-out">
-            HTML, CSS, JS, C#, ExpressJS, 
-            React, Bootstrap, Tailwind...
+        <p class="hidden md:mx-auto md:text-center text-start mt-4 font-semibold xs:flex bruh:text-sm sm:text-base text-xl text-secondary xs:w-full w-2/3 break-words">
+            I program Games, Apps and Websites (Front & Backend), using:
         </p>
-        <img data-aos="fade-left" data-aos-duration="2000" class="drop rounded-lg h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <p class="md:mx-auto md:w-2/3 md:text-center mt-2 text-start font-semibold xs:w-full bruh:text-xs sm:text-sm text-base text-white w-1/3 hover:translate-x-4 transition-all delay-75 duration-500 ease-in-out">
+            HTML, CSS, JS, C#, ExpressJS, React, Bootstrap, Tailwind...
+        </p>
+        <img data-aos="fade-left" data-aos-duration="2000" class="sm:hidden md:mt-4 md:mx-auto drop rounded-lg xs:h-28 sm:h-44 h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+        <img data-aos="fade-left" data-aos-duration="2000" class="hidden sm:flex md:mt-4 md:mx-auto rounded-lg xs:h-28 sm:h-44 h-60 w-auto ml-auto" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
     </div>
-    <div data-aos="fade-right" data-aos-duration="1250" class="mx-auto mt-48 flex-col w-2/3 pb-20 pt-16">
+    <div data-aos="fade-right" data-aos-duration="1250" class="mx-auto mt-48 flex-col lg:w-5/6 w-2/3 pb-20 pt-16">
         <div class="flex">
-            <img src="./quoteBegin.png" alt="" class="stroke-secondary h-5 mr-4 w-auto self-start">
+            <img src="./quoteBegin.png" alt="" class="stroke-secondary sm:h-3 md:h-4 h-5 mr-4 w-auto self-start">
             <div class="flex-col">
-                <p class="text-white font-semibold text-6xl">
-                    In the middle of every problem, lies opportunity
-                    <img src="./quoteEnd.png" alt="" class="inline-flex h-5 w-auto self-end mr-auto">
+                <p class="text-white font-semibold sm:text-4xl md:text-5xl text-6xl">
+                    In the middle of every problem, lies opportunity<img src="./quoteEnd.png" alt="" class="inline-flex sm:h-3 md:h-4 h-5 w-auto self-baseline ml-2">
                 </p>
-                <p class="mt-4 text-display text-4xl font-bold">
+                <p class="mt-4 text-display sm:text-2xl md:text-3xl text-4xl font-bold">
                     //Albert Einstein
                 </p>
-                <div class="mt-8">
-                    <p class="text-secondary font-semibold text-2xl">
+                <div class="sm:mt-4 md:mt-6 mt-8">
+                    <p class="text-secondary font-semibold sm:text-base md:text-lg text-2xl">
                         This quote summarizes the purpose of my applications and projects. <br>
                         That in the presence of a need, I can use technology to craft a solution for it.
                     </p>
@@ -87,9 +89,7 @@
             </div>
         </div>
     </div>
-    <div id="projects">
-
-    </div>
+    <div id="projects"></div>
     <!-- data-aos="fade-up" data-aos-duration="2000"-->
     <div data-aos="fade-up" data-aos-duration="2000" class="mx-auto mt-36 flex-col w-5/6 pb-28">
         <p class="text-secondary text-3xl mx-auto font-semibold w-max">
@@ -155,7 +155,7 @@
                             <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
                         </svg>             
                     </span>
-                    <img class="object-left w-5/12 object-cover ml-auto rounded-r-lg" src="./soupkitchen.jpg" alt="">
+                    <img class="object-right w-5/12 object-cover ml-auto rounded-r-lg" src="./weather.jpg" alt="">
                 </div>
                 <p class="w-max transition duration-300 ease-in-out hover:translate-x-2 mt-2 text-lg text-display text-start font-semibold underline decoration-4 underline-offset-8 decoration-secondary">
                     Flutter, Dart, APIs, Android Studio (Tool)
@@ -191,25 +191,27 @@
             
         </p>
     </div>
-    <!--Content-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
     let discordName = "TheOneOba#3319"
     let revealed = false
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
     const revealDiscord = () =>  {
         if(!revealed) {
             document.getElementById("discordName").innerHTML =  `${discordName}
-            <svg onclick="copyDiscord()" class="inline ml-2 cursor-pointer fill-secondary hover:fill-display hover:scale-105 h-8 transition duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM272 224h-160C103.2 224 96 216.8 96 208C96 199.2 103.2 192 112 192h160C280.8 192 288 199.2 288 208S280.8 224 272 224z"/>
+            <svg onclick="copyDiscord()" class="inline ml-2 cursor-pointer fill-secondary hover:fill-display hover:scale-105 h-8 transition duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM272 224h-160C103.2 224 96 216.8 96 208C96 199.2 103.2 192 112 192h160C280.8 192 288 199.2 288 208S280.8 224 272 224z"/>
             </svg>`
             revealed = true
         }
@@ -219,13 +221,6 @@
         navigator.clipboard.writeText(discordName)
         alert("Done!")
     }
-    // document.addEventListener("scroll", (e) => {
-    //     let projTitle = document.getElementById("projIntro").getBoundingClientRect();
-    //     projTitleY = projTitle.y;
-    // if(1.5 * projTitleY <= window.innerHeight) {
-    //     console.log("Reach Intro")
-    // }
-    // })
   </script>
 </body>
 </html>
