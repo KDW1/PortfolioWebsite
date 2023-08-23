@@ -144,13 +144,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         class Project{
-            constructor(title = "", link = null, full = "", short = "", logo = "", tools = []) {
+            constructor(title = "", link = null, full = "", short = "", logo = "", tools = [], secondaryTitle = null) {
                 this.title = title;
                 this.link = link;
                 this.full = full;
                 this.short = (short == "same") ? full : short;
                 this.logo = logo;
                 this.tools = tools;
+                this.secondaryTitle = secondaryTitle
             }
         }
 
@@ -159,13 +160,15 @@
         let divClasses = divClass.split(" ");
 
         let projectList = [
+            //The pain of not implementing this in jsx at first, maybe should've used hugo or some thing else with static templating
             new Project(
-                "qOverflow", 
-                "https://github.com/codergautam/qOverflow",
-                "A Q&amp;A web application I made with my team in the 2022 BDPA HSCC Competition. Check out the Github Repo, or search up 'BDPACON 2022 Recap' for more info!",
-                "A Q&amp;A website I made with my team in the 2022 BDPA HSCC Competition, click on the github logo for more!",
+                "inBDPA", 
+                "https://github.com/codergautam/inBDPA",
+                "A Linkedin-esque website, that my team made for the annual BDPA High School Coding Competition. Its a website where anyone can post articles, discover job opportunities, and grow a network of like-minded professionals. It also included advanced moderation and admin tooling, generative AI integration, and a fast network graph optimized with a graph DB. We won 1st place.",
+                "A Linkedin-esque website I made with my team in the 2023 BDPA HSCC Competition, click on the github logo for more! We won 1st!",
                 "github",
-                ["TailwindCSS", "ExpressJS", "NodeJS", "APIs"]
+                ["Nextjs", "TailwindCSS", "MongoDB", "Neo4j", "ChatGPT", "APIs"],
+                "we won 1st!"
             ),
             new Project(
                 "Nuclear Data Mapping", 
@@ -173,7 +176,16 @@
                 "This was a small web application I made with a friend, who provided me with data from a Rutgers study: https://www.nature.com/articles/s43016-022-00573-0 (Covers the information from 'Supplementary Information')",
                 "Web application covering the 'Supplementary Information' section of this Rutgers study: https://www.nature.com/articles/s43016-022-00573-0",
                 "github",
-                ["TailwindCSS", "ExpressJS", "NodeJS", "Word Doc Parsing", "Heroku"]
+                ["TailwindCSS", "Nextjs", "NodeJS", "Word Doc Parsing", "Heroku"]
+            ),
+            new Project(
+                "qOverflow", 
+                "https://github.com/codergautam/qOverflow",
+                "A Q&amp;A web application I made with my team in the 2022 BDPA HSCC Competition. Check out the Github Repo, or search up 'BDPACON 2022 Recap' for more info! We won 2nd place",
+                "A Q&amp;A website I made with my team in the 2022 BDPA HSCC Competition, click on the github logo for more! We won 2nd!",
+                "github",
+                ["TailwindCSS", "ExpressJS", "NodeJS", "APIs"],
+                "we won 2nd!"
             ),
             new Project(
                 "Waiter Duty 2.0",
@@ -197,7 +209,8 @@
                 "MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro website. I created this my late 7th grade year, as one of my very first projects.",
                 "MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro website. A website I created in 7th grade.",
                 "github",
-                ["HTML", "JS", "CSS", "Bootstrap"]
+                ["HTML", "JS", "CSS", "Bootstrap"],
+                "my first project!"
             ),
             new Project(
                 "Solar Ace",
@@ -205,7 +218,8 @@
                 "My first weather app (made in 7th grade summer) where I tried working with a public weather api!",
                 "My first weather app, made in 7th grade, where I tried working with a public weather api!",
                 "googleplay", 
-                ["Flutter", "Dart", "APIs", "Android Studio"]
+                ["Flutter", "Dart", "APIs", "Android Studio"],
+                "my first mobile app!"
             )
         ]
 
@@ -238,7 +252,7 @@
             }
         }
 
-        function Card({link, title, full, short, logo, tools}) {
+        function Card({link, secondaryTitle, title, full, short, logo, tools}) {
             let d = document.createElement("div");
             let toolDescription = tools.join(", ");
             divClasses.map((cl) => {
@@ -252,7 +266,8 @@
             d.lastChild.innerHTML = `
                     <div class="sm:flex-col flex w-full">
                         <div class="sm:w-full w-3/4">
-                            <p class="sm:text-xl text-2xl text-white sm:text-center text-start font-bold">${title}</p>
+                            <p class="sm:text-xl text-2xl text-white sm:text-center text-start font-bold">${title}${secondaryTitle ? `<span class="text-display">, ${secondaryTitle}</span>` : ''}
+</p>
                             <p class="sm:hidden text-start text-secondary font-semibold bruh:text-xs w-1/2 sm:text-sm text-base">
                                 ${full}
                             </p>

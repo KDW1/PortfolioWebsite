@@ -1160,6 +1160,10 @@ input:checked + .toggle-bg {
   margin-left: 0.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-36 {
   margin-top: 9rem;
 }
@@ -1178,10 +1182,6 @@ input:checked + .toggle-bg {
 
 .mb-1 {
   margin-bottom: 0.25rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
 }
 
 .block {
@@ -1232,10 +1232,6 @@ input:checked + .toggle-bg {
   height: 6rem;
 }
 
-.h-52 {
-  height: 13rem;
-}
-
 .h-28 {
   height: 7rem;
 }
@@ -1282,16 +1278,12 @@ input:checked + .toggle-bg {
   width: max-content;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .w-min {
@@ -1300,12 +1292,16 @@ input:checked + .toggle-bg {
   width: min-content;
 }
 
-.w-3\/4 {
-  width: 75%;
-}
-
 .w-1\/4 {
   width: 25%;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .min-w-max {
@@ -1324,6 +1320,10 @@ input:checked + .toggle-bg {
 
 .flex-shrink {
   flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .border-spacing-4 {
@@ -2256,14 +2256,6 @@ input:checked + .toggle-bg {
 
   .bruh\:hidden {
     display: none;
-  }
-
-  .bruh\:w-3\/4 {
-    width: 75%;
-  }
-
-  .bruh\:text-center {
-    text-align: center;
   }
 
   .bruh\:text-xl {
