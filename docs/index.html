@@ -161,6 +161,15 @@
 
         let projectList = [
             //The pain of not implementing this in jsx at first, maybe should've used hugo or some thing else with static templating
+            
+            new Project(
+                "FESTIM View", 
+                "https://github.com/KDW1/festim-view",
+                "Assisted research assistant Rémi Delaporte-Mathurin and postdoctoral associate James Dark to develop a GUI for FESTIM which visualizes finite-element-modeling simulations in nuclear power plant components on a user-friendly web application",
+                "A GUI for FESTIM which visualizes finite-element-modeling simulations in nuclear power plant components on a user-friendly web application",
+                "github",
+                ["Nextjs", "Flask", "Paraview", "Trame", "Docker", "WSL2"]
+            ),
             new Project(
                 "inBDPA", 
                 "https://github.com/codergautam/inBDPA",
@@ -187,40 +196,6 @@
                 ["TailwindCSS", "ExpressJS", "NodeJS", "APIs"],
                 "we won 2nd!"
             ),
-            new Project(
-                "Waiter Duty 2.0",
-                "https://waiter-duty.herokuapp.com/",
-                "A small application that makes creating employee (waiter duty) rosters, easier for students. Developed for Troop Culver Academies Dorm",
-                "A small application that makes creating employee (waiter duty) rosters, easier for students.",
-                "github",
-                ["TailwindCSS", "ExpressJS", "NodeJS", "Heroku"]
-            ),
-            new Project(
-                "Dimension Rush",
-                "https://kdw.itch.io/dimensionrush",
-                "A platforming adventure, where you phase through dimensions to speed past levels.",
-                "same",
-                "itch",
-                ["Unity2D", "C#", "WebGL"]
-            ),
-            new Project(
-                "MHI Prototype",
-                "https://kdw1.github.io/MHI-Cerebro-Project/Cerebro/",
-                "MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro website. I created this my late 7th grade year, as one of my very first projects.",
-                "MHI (Mental Health Initiative) website, that served as a prototype for MME's Cerebro website. A website I created in 7th grade.",
-                "github",
-                ["HTML", "JS", "CSS", "Bootstrap"],
-                "my first project!"
-            ),
-            new Project(
-                "Solar Ace",
-                "https://play.google.com/store/apps/details?id=com.kingcode.weather_app&pli=1",
-                "My first weather app (made in 7th grade summer) where I tried working with a public weather api!",
-                "My first weather app, made in 7th grade, where I tried working with a public weather api!",
-                "googleplay", 
-                ["Flutter", "Dart", "APIs", "Android Studio"],
-                "my first mobile app!"
-            )
         ]
 
         projectList.map(project => {
