@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/festim-view",
+            "destination": "http://34.135.27.164/"
+        }
+    ]
+}
