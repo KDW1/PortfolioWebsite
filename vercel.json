@@ -2,8 +2,7 @@
     "rewrites": [
         {
             "source": "/festim-view/:path*",
-            "destination": "http://34.135.27.164*",
-            "permanent": true
+            "destination": "http://34.135.27.164*"
         }
     ]
 }
